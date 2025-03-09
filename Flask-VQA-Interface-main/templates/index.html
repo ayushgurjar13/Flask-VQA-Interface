@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Question Answering</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index-style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Visual Question Answering</h1>
+        <form action="/vqa" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image">Upload an Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="question">Enter Your Question:</label>
+                <input type="text" id="question" name="question" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="footer">
+            <p>&copy; 2024 Visual QA Interface</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VQA Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result-style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>VQA Result</h1>
+        <img src="{{ image_url }}" alt="Uploaded Image"><br><br>
+        <p><strong>Question:</strong> {{ question }}</p>
+        <p><strong>Answer:</strong> {{ answer }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}</p>
+        <a href="/">Ask another question</a>
+    </div>
+</body>
+</html>
